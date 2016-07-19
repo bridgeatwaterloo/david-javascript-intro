@@ -95,24 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.david-question-container {
+.david-container {
     text-align: center;
+    margin-top: 5rem;
 }
-
-.david-question-container h1 {
-    margin-bottom: 3rem;
-}
-
-.david-question-container button {
-    display: block;
-    width: 100%;
-    margin-bottom: 1.5rem;
-}
-
-
-
-
-
 
 
 
