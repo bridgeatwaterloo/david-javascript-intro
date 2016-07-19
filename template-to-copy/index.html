@@ -24,7 +24,100 @@
   </head>
   <body>
 
+    <!-- Navbar from Bootstrap: http://v4-alpha.getbootstrap.com/components/navbar/ -->
+    <nav class="navbar navbar-light bg-faded navbar-fixed-top">
+      <div class="container">
+        David
+      </div>
+    </nav>
 
+    <!-- A div with a class of container from bootstrap. I have given it a class of david-container as well, so we can target just this div in our CSS -->
+    <div class="container david-container">
+
+      <!-- Our first view: Checkin
+
+      A section element with a class of view so we can target all views together
+      It also has a class of view-checkin so we can target it specifically
+
+       -->
+      <section class="view view-checkin">
+
+        <!-- Card from bootstrap: http://v4-alpha.getbootstrap.com/components/card/ -->
+        <div class="card text-xs-center">
+          <div class="card-header">
+            Checkin
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Please confirm you have arrived</h4>
+            <p class="card-text">We need to check you are in the Blue Room at Strive Festival. Please confirm by sharing your location with us.</p>
+            <a href="#" class="btn btn-primary submit-checkin">Check me in</a>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!-- Our second view: Set username
+
+        Same class as the first view, with its own unique view-set-username class
+
+      -->
+
+      <section class="view view-set-username">
+
+        <!-- Another card from bootstrap -->
+        <div class="card text-xs-center">
+          <div class="card-header">
+            Login
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Welcome to David</h4>
+            <p class="card-text">What would you like your username to be?</p>
+
+
+            <!-- a form with an input -->
+            <form class="form-set-username">
+              <input type="text" class="form-control" name="username" placeholder="Username">
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Our third view: Ask them a question -->
+      <section class="view view-question">
+        <div class="card text-xs-center">
+          <div class="card-header">
+            Question
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Are you happy, <span class="username">@username</span>?</h4>
+            <p class="card-text"></p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Our third view: Ask them a question -->
+      <section class="view view-default">
+        <div class="card text-xs-center">
+          <div class="card-header">
+            Thank you
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">We are processing the results.</h4>
+          </div>
+        </div>
+      </section>
+
+
+    </div><!-- end of .david-container -->
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
