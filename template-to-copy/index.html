@@ -1,88 +1,48 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>David Question Prototype</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>David Question Prototype</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <!-- Ali comment:
+    <!-- Ali comment:
 
-            Bootstrap includes normalize.css, so replacing normalize.css
+        Bootstrap includes normalize.css, so replacing normalize.css
 
-            We are loading the Bootstrap CSS library from a Content Delivery Network (CDN). All we are doing is following the instructions here: http://getbootstrap.com/getting-started/
+        We are using Bootstrap 4 as it has a lovely card component
 
-         -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        I have downloaded the entire thing into a folder called bootstrap4 in the root of this project
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+     -->
+    <link rel="stylesheet" href="bootstrap4/dist/css/bootstrap.css">
 
-        <!-- Ali comment:
-
-            Bootstrap's JavaScript has a dependency on jQuery.
-
-            HTML5 Boilerplate includes jQuery by default.
-
-            I have moved the Bootstrap JavaScript file to the bottom of this file so that it is loaded by the browser after jQuery
-
-         -->
-
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <button type="button" class="btn btn-default" aria-label="Reset Choice">
-                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Reset choice
-                </button>
-            </div><!-- end of nav.navbar div.container -->
-        </nav>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
 
 
-        <div class="container david-question-container">
 
-            <h1>Are you enjoying the performance so far?</h1>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 
-            <div class="row">
-                <!-- use Bootstrap Grid to have them 12 columns wide when extra small (xs) and 6 columns wide when small (sm) -->
-                <div class="col-xs-12 col-sm-6">
+    <!-- Ali comment:
 
-                    <!-- Indicates a successful or positive action -->
-                    <button type="button" class="btn btn-success btn-lg">Yes!</button>
+        jQuery is included above as part of HTML5 Boilerplate
 
-                </div>
-                <div class="col-xs-12 col-sm-6">
+        Bootstrap's JavaScript needs to be included after the browser has read jQuery
 
-                    <!-- Indicates a dangerous or potentially negative action -->
-                    <button type="button" class="btn btn-danger btn-lg">No</button>
+     -->
 
-                </div>
-            </div>
-        </div><!-- end of div.container -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap4/dist/js/bootstrap.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 
-        <!-- Ali comment:
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-            jQuery is included above as part of HTML5 Boilerplate
-
-            Bootstrap's JavaScript needs to be included after the browser has read jQuery
-
-         -->
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-        <!--
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-    </body>
+  </body>
 </html>
