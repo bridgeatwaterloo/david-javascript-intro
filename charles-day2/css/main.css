@@ -277,3 +277,8 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+.jumbotron {
+              margin-top: 9rem;
+}
