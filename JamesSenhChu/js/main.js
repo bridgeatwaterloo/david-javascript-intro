@@ -42,3 +42,8 @@ function processNo() {
 	alert("Don't worry, we'll get you there soon enough ( ͡° ͜ʖ ͡°)")
 	showView('.view-default');
 	}
+$('.reset').click(processReset);
+
+function processReset() {
+	showView('.view-checkin');
+}
